@@ -22,7 +22,9 @@ Constraints:
 class Solution {
     public int maxProfit(int[] prices) {
         // handle edge cases
-        if (prices == null || prices.length < 2) return 0;
+        if (prices == null || prices.length < 2) {
+            return 0;
+        }
         // track minimum price seen so far
         int minPrice = prices[0];
         // track maximum profit seen so far
